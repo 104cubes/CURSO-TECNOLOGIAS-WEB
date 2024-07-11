@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos y variables</title>
+</head>
+
+<body style="margin: ;">
+    <svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+        <!-- Fondo oscuro -->
+        <rect width="1280" height="720" fill="#1a1a1a"/>
+        
+        <!-- Sección para el título con borde y sombra -->
+        <rect x="50" y="50" width="1180" height="100" fill="#2c2c2c" rx="15" ry="15" stroke="#555555" stroke-width="5" filter="url(#shadow)"/>
+        <text x="640" y="110" font-family="Arial" font-size="36" text-anchor="middle" fill="#e0e0e0">
+            <tspan x="640" dy="1.2em">Descripción de la noticia</tspan>
+            <tspan x="640" dy="1.2em">que puede ocupar varias</tspan>
+        </text>
+      
+       <!-- Sección para imagen de la noticia con borde y sombra -->
+        <rect x="50" y="170" width="1180" height="400" fill="#333333" rx="15" ry="15" stroke="#555555" stroke-width="5" filter="url(#shadow)"/>
+        <text x="640" y="370" font-family="Arial" font-size="24" text-anchor="middle" fill="#999999">Imagen</text>
+        
+        <!-- Sección para la descripción con scroll lateral -->
+        <rect x="50" y="600" width="1180" height="100" fill="#2c2c2c" rx="15" ry="15" stroke="#555555" stroke-width="5" filter="url(#shadow)"/>
+        <clipPath id="text-clip">
+          <rect x="55" y="605" width="1170" height="90"/>
+        </clipPath>
+        <text x="55" y="660" font-family="Arial" font-size="24" fill="#b0b0b0" clip-path="url(#text-clip)">
+          <animate attributeName="x" from="1280" to="-1000" dur="20s" repeatCount="indefinite"/>
+          Descripción de la noticia que se desplazará horizontalmente por la pantalla. Esta descripción puede ser larga y permitirá ver más texto con el desplazamiento.
+        </text>
+        
+        <!-- Animación de ondas -->
+        <defs>
+          <linearGradient id="waveGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#483d8b;stop-opacity:0.6" />
+            <stop offset="100%" style="stop-color:#483d8b;stop-opacity:0" />
+          </linearGradient>
+          <path id="waveDark" d="M 0 400 Q 320 300 640 400 T 1280 400 V 720 H 0 Z" fill="url(#waveGradientDark)" />
+        </defs>
+        <use href="#waveDark">
+          <animate attributeName="d" values="M 0 400 Q 320 300 640 400 T 1280 400 V 720 H 0 Z; M 0 420 Q 320 320 640 420 T 1280 420 V 720 H 0 Z; M 0 400 Q 320 300 640 400 T 1280 400 V 720 H 0 Z" dur="10s" repeatCount="indefinite"/>
+        </use>
+        
+        <!-- Definición de sombra -->
+        <defs>
+          <filter id="shadow">
+            <feDropShadow dx="5" dy="5" stdDeviation="5" flood-color="#555555"/>
+          </filter>
+        </defs>
+      </svg>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <script>
+
+for (i=1;i<11;i++){
+    document.write('<div>' + i + '</div>');
+}
+        var numeroEntero = 5;
+        var numeroDecimal = 3.14;
+        var numeroNegativo = -10;
+
+        console.log("Número Entero:", numeroEntero);
+        console.log("Número Decimal:", numeroDecimal);
+        console.log("Número Negativo:", numeroNegativo);
+        let tipo = typeof numeroEntero;
+        console.log("Tipo: ", tipo);
+        let stra =  "Número negativo: " + numeroNegativo;
+        // Template literals
+        let datosVariable =  "Número Negativo: " 
+        + numeroNegativo + ", tipo de dato: " 
+        +tipo;
+        console.log(datosVariable);
+        // String: Representa datos de texto
+        var saludo = 'Hola';
+        var despedida = "Mundo";
+        console.log("Saludo:", saludo);
+        console.log("Despedida:", despedida);
+
+        console.log("Tipo: ", typeof saludo);
+      
+        // Boolean: Representa un valor lógico (true o false)
+        var esVerdadero = true;
+        var esFalso = false;
+
+        console.log("Es Verdadero:", esVerdadero)
+        console.log("Es Falso:", esFalso)console.log("Es Falso:", esFalso)
+        
+        
+        // Null: Representa la ausencia intencional de cualquier valor
+        var valorNulo = null;
+        
+        console.log("Valor Nulo:", valorNulo);
+        console.log("tipo: ", typeof valorNulo);
+        // Undefined: Representa un valor no definido
+        var valorNoDefinido;
+        console.log("tipo: ", typeof  valorNoDefinido)
+        console.log("Valor No Definido:", valorNoDefinido);
+      
+
+// Hasta primitivos
+
+        // Tipos No Primitivos
+        // Array
+        var arr = ["pera", "manzana", "Plátano"];
+        console.log(arr)
+        console.log("tipo: ", typeof  arr);
+        let fruta1 = arr[0];
+        let fruta2 = arr[1];
+        let fruta3 = arr[2];
+        console.log(fruta1, fruta2, fruta3);
+
+        // Objeto jSon
+        var obj = { 
+            "nombre": "Pepe", 
+            "apellido": "García" 
+        }
+
+        console.log(obj);
+        console.log("tipo: ", typeof  obj)
+
+        let nombre = obj.nombre; 
+        let apellido = obj.apellido;
+        console.log(nombre + "\n" + apellido);
+
+    </script>
+
+</body>
+
+</html>

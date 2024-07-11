@@ -1,0 +1,33 @@
+*::selection{
+    color: aquamarine;
+}
+.cta-button {
+    position: relative;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button::first-letter {
+    color: green;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+.cta-button:hover::before {
+    content: "¡Haz click! ";
+    color: yellow;
+}
+
+.cta-button:focus::after {
+    content: " Ya has visitado este recurso";
+}
+.cta-button:focus::first-letter{
+    color: white;
+}
+

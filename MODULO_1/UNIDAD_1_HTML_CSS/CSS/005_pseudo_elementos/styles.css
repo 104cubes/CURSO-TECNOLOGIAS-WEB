@@ -1,0 +1,29 @@
+
+.cta-button {
+    background-color: #626bb2; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón en blanco */
+    padding: 15px 30px; /* Relleno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px;
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    text-transform: uppercase; /* Texto en mayúsculas */
+  }
+.cta-button::first-letter{
+     color: green
+}
+.cta-button:hover::before{
+    background-color: #42465f;
+    content: "¡Haz click aqui! -->> ";
+    color:wheat
+}
+.cta-button:hover::first-letter{
+    color:wheat
+}
+.cta-button:focus::first-letter{
+    color: white;
+}
+.cta-button:focus::after{
+    content:"  Ya has visitado este recurso";
+    
+}

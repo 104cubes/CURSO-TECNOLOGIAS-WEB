@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Cubre el formulario</h1>
+    <form name="form" id="form" action="#">
+        <fieldset>
+            <legend>Daros personales:</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="name" name="nombre" id="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="name" name="apellido" id="apellido" required>
+            <br>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            <br>
+            <label for="genero">Género:</label>
+            <label for="masculino">masculino</label>
+                <input type="radio" name="genero" id="masculino" required>
+                <label for="femenino">femenino</label>
+                <input type="radio" name="genero" id="femeninno" required>
+                <label for="otro">otro</label>
+                <input type="radio" name="genero" id="otro" required>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto:</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="tel" id="tel" required>
+            <br>
+            <textarea name="direccion" id="direccion" cols="60" rows="5">
+
+            </textarea>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

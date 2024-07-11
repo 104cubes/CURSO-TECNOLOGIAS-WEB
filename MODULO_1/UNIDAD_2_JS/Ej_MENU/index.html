@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Haz tu propio menú!</h1>
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2>Entrantes</h2>
+            <ol id="listaEntrantes">
+                <li>Croquetas líquidas de roquefort</li>
+                <li>Steak tartar</li>
+                <li>Champiñones rellenos al horno con jamón y queso</li>
+            </ol>
+            <div class="buttons">
+                <input type="button" onclick="anadirEntrante()" value="Añadir Entrante">
+                <input type="button" onclick="borrarEntrante()" value="Borrar Entrante">
+                <input type="button" onclick="escogerEntrante()" value="Escoger Entrante">
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Plato principal</h2>
+            <ol id="listaPlatos">
+                <li>Salmón a la plancha con arroz y espárragos</li>
+                <li>Solomillo con salsa verde</li>
+                <li>Dorada con ensalada de lombarda</li>
+            </ol>
+            <div class="buttons">
+                <input type="button" onclick="anadirPlato()" value="Añadir Plato">
+                <input type="button" onclick="borrarPlato()" value="Borrar Plato">
+                <input type="button" onclick="escogerPlato()" value="Escoger Plato">
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Postre</h2>
+            <ol id="listaPostres">
+                <li>Tarta de queso</li>
+                <li>Flan de chocolate blanco y negro</li>
+                <li>Empanadillas con cabello de ángel</li>
+            </ol>
+            <div class="buttons">
+                <input type="button" onclick="anadirPostre()" value="Añadir Postre">
+                <input type="button" onclick="borrarPostre()" value="Borrar Postre">
+                <input type="button" onclick="escogerPostre()" value="Escoger Postre">
+            </div>
+        </div>
+    </div>
+    <div class="order-summary">
+        <h2>Tu pedido es:</h2>
+        <p><strong>Tu entrante es:</strong> <span id="entPedido"></span></p>
+        <p><strong>Tu plato es:</strong> <span id="platoPedido"></span></p>
+        <p><strong>Tu postre es:</strong> <span id="postrePedido"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

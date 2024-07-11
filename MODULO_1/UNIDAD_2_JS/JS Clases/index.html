@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases JS</title>
+</head>
+
+<body>
+    <script>
+        class Personas { // los nombres de clases sí empiezan a menudo con mayúscula
+            constructor(nombre, edad) { // Método que se aplica en la creación
+                this.nombre = nombre; // Añadimos los atributos al objeto
+                this.edad = edad;
+            }
+          
+          
+            set cambios(cambios) {
+                this.nombre = cambios.nombre;
+                this.edad = cambios.edad
+
+            }
+
+        }
+
+        // Creamos objetos partiendo de la plantilla (clase) // persona1.edad();
+        const Persona1 = new Personas("Juan", 50);
+        console.log(Persona1);
+        const Persona2 = new Personas("Pepe", 30);
+        // imprimimmos? document.write(Persona1.nombre);
+       
+        Persona1.cambios = {
+            nombre: "Mario",
+            edad: 47
+        }
+        console.log(Persona1); // set
+        console.log(Persona1.nombre); // get
+        console.log(Persona1.edad) // get
+    </script>
+</body>
+
+</html>

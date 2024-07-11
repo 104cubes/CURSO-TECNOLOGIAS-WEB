@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+/* Contenedor flex */
+.profile-card {
+    display: flex;
+
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 35%;
+}
+
+/* Imagen de perfil */
+.profile-image img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    width:110px
+}
+
+/* Información del perfil */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.profile-description {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.profile-button {
+    background-color: hsl(220, 90%, 56%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: hsl(220, 90%, 46%);
+}
+section{
+    justify-content: center;
+}
+/* Media Queries */
+
+/* Móviles (Vertical) */
+@media (max-width: 480px) {
+    .profile-card {
+       
+        width: 80%;
+        margin-left: 10px !important;
+    }
+   
+    .profile-button {
+        background-color: #4ecdc4; /* Turquesa */
+    }
+    
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="img/logo.png">
+        <h1>Inicio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        
+        <section>
+            <h2 style="min-width: 100%;">Nuestro equipo</h2>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="Imagen de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Descripción breve sobre el usuario. Un poco más de texto para hacerla más interesante.</p>
+                    <button class="profile-button">Seguir</button>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <img src="img/facebook.png">
+            <img src="img/twitter.png">
+            <img src="img/whatsapp.png">
+        </aside>
+    </main>
+    <footer>
+        &copy; 2024 - Curso Nascor
+    </footer>
+</body>
+</html>

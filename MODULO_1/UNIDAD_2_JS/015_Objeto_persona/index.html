@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Persona</title>
+</head>
+
+<body>
+    <div id="contenido">
+
+    </div>
+    <script>
+        var a = 1;
+        function comprueba() {
+            if (a == 1) {
+                var b = 2;
+            }
+            var suma = a + b; // 3
+        }
+        let aa = 1;
+        function comprueba2() {
+            if (aa == 1) {
+                let b = 2;
+                console.log(suma = a + b); // 3
+                if (aa == b) {
+                    let c = 0;
+                    if (b == aa) {
+                        aa = 2;
+                        b = 3;
+                    }
+                }
+                console.log(c); // undefined o error
+            }
+            console.log(suma = a + b); // NaN
+        }
+
+
+
+
+        let a, b = 1, c = 4, d;
+        let persona = {
+            nombre: "Juan",
+            apellido: "Nadie",
+            edad: 50,
+            ojosColor:
+            {
+                izquierdo: "Verde",
+                derecho: "Azul"
+            },
+            altura: 1.80
+        };
+        let alturaDosDecimales = parseFloat(persona.altura).toFixed(2);
+        let html = `<h2>Hola ${persona.nombre} ${persona.apellido}, 
+        tu edad es de ${persona.edad} años y mides ${alturaDosDecimales} m. 
+Eres como Bowie porque tienes el ojo izquierdo ${persona.ojosColor.izquierdo} 
+y el derecho ${persona.ojosColor.derecho}.</h2> <h1>Bienvenido!!</h1>`;
+        let el = document.getElementById('contenido');
+        el.innerHTML = html;
+
+        persona.nombre = "Pepe";
+        persona.ojosColor.derecho = "Marrón";
+        persona.ojosColor.izquierdo = "Marrón";
+        let htmlCambiado = `<h2>Hola ${persona.nombre} ${persona.apellido}, 
+        tu edad es de ${persona.edad} años y mides ${alturaDosDecimales} m. 
+Eres como Bowie porque tienes el ojo izquierdo ${persona.ojosColor.izquierdo} 
+y el derecho ${persona.ojosColor.derecho}.</h2> <h1>Bienvenido!!</h1>`;
+        el.innerHTML = htmlCambiado;
+
+
+
+        let texto = "Este%%%es mi texto%%%para manipular";
+
+
+        /* Método replace replaceAll*/
+        let textSaneado = texto.replaceAll('%%%', ', ');
+        console.log(textSaneado);
+        /* 
+      Método Split*/
+        let array = textSaneado.split(', ');
+        console.log(array);
+        let persona = '{nombre:"Juan", apellido:"Nadie", edad:50, ojosColor:"azul"};';
+        let personab = persona.replace('Juan', '');
+        if (pesonab === persona) {
+            console.log("Hola no eres Juan");
+        }
+        persona.nombre;
+        JSON.parse(persona);
+        let persona = { nombre: "Juan", apellido: "Nadie", edad: 50, ojosColor: "azul" };
+       
+    </script>
+</body>
+
+</html>

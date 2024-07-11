@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <style>
+        button{
+            padding:20px;
+            background-color: darkseagreen;
+            width:100px;
+            border: 0px;
+            border-radius: 5px;
+            color:white;
+            cursor: pointer;
+            margin: 150px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="alert('¡HOLA MUNDO!')">
+        Click Aquí
+    </button>
+    <script>
+       var parrafo = document.querySelector("button");
+           parrafo.addEventListener("mouseleave", function() {
+            alert("¡Adiós Mundo!");
+        });
+
+        console.log("Hola Mundo")  
+          // Este es el código JavaScript integrado
+          // El siguiente código muestra una alerta cuando se hace clic en el párrafo  
+    </script>
+</body>
+</html>
